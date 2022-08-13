@@ -1,0 +1,4 @@
+# GRAAL
+Gamified Responsible Augmented Assembly LIne
+
+GRAAL is an Augmented Reality project for use in Industry 4.0 in manual assembly lines. The prototype is being tested in a large multinational industry in the city of Jaraguá do Sul, Santa Catarina, on a printed circuit board assembly line and consists of a camera and a computer with software that comprises the following technologies: client- server, being on the client side a development with Unity3D, Vuforia Mixed Reality and a RESTFUL protocol for communication with the server. On the server side, a RESTFUL API was developed using Java SpringBoot and MySQL database to store production data and assemblers' performance. Applied on top of the AR layer, the Gamification layer is being developed in order to promote greater engagement and maintain/improve the performance of operators in the long term.
