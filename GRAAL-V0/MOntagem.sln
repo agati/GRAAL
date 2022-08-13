@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{1FC011AB-6436-5B0B-4023-48BFF4A2EA72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFileBrowser.Runtime", "SimpleFileBrowser.Runtime.csproj", "{2DA16E01-79F8-A0F3-E070-C4181BAEE80B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditorMigrationScripts", "EditorMigrationScripts.csproj", "{59BEFF03-F716-38DC-34C2-ADFEFD30B5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{026EC225-A6EA-EB53-F867-B01CC05F5852}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FC011AB-6436-5B0B-4023-48BFF4A2EA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC011AB-6436-5B0B-4023-48BFF4A2EA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC011AB-6436-5B0B-4023-48BFF4A2EA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC011AB-6436-5B0B-4023-48BFF4A2EA72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA16E01-79F8-A0F3-E070-C4181BAEE80B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA16E01-79F8-A0F3-E070-C4181BAEE80B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA16E01-79F8-A0F3-E070-C4181BAEE80B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA16E01-79F8-A0F3-E070-C4181BAEE80B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59BEFF03-F716-38DC-34C2-ADFEFD30B5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59BEFF03-F716-38DC-34C2-ADFEFD30B5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59BEFF03-F716-38DC-34C2-ADFEFD30B5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59BEFF03-F716-38DC-34C2-ADFEFD30B5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026EC225-A6EA-EB53-F867-B01CC05F5852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026EC225-A6EA-EB53-F867-B01CC05F5852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026EC225-A6EA-EB53-F867-B01CC05F5852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026EC225-A6EA-EB53-F867-B01CC05F5852}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
