@@ -1,0 +1,1440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{78A1A12B-4092-CE72-16DB-302A2F3CE4A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_2021_2_13;UNITY_2021_2;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_WINRT;TEXTCORE_1_0_OR_NEWER;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;UNITY_WSA;UNITY_WSA_10_0;UNITY_WINRT_10_0;UNITY_WINRT;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;PLATFORM_SUPPORTS_ADS_ID;CURL_STATICLIB;PLATFORM_OVERRIDES_APPLICATION_PACKAGE_NAME;PLATFORM_IMPLEMENTS_ATTACH_DIALOG;DISABLE_PLUGIN_LOAD_WRAPPER;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;VUFORIA_WSA_SETTINGS;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.14</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>WSAPlayer:21</UnityBuildTarget>
+    <UnityVersion>2021.2.13f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\HersheyFonts.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Delegate\CvMouseCallback.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\objdetect\Enum\HaarDetectionType.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\bgsegm\BackgroundSubtractorMOG.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\superres\DenseOpticalFlowExt.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\OpenCVException.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\ml\LogisticRegression.cs" />
+    <Compile Include="Assets\Scripts\Modulos\RPModule.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_MSER.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\photo\SeamlessCloneMethods.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\MatExpr.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_calib3d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\Enum\ORBScore.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\objdetect\CascadeClassifier.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Model\Line3D.cs" />
+    <Compile Include="Assets\Scripts\GerenciadorDeCenas.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_objdetect.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\RectanglesIntersectTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\ShapeMatchModes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\highgui\Enum\WindowProperty.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\superres\DenseOpticalFlowExtImpl.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\InterpolationFlags.cs" />
+    <Compile Include="Assets\Scripts\Step_Controller.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfRect.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVectorKeyPoint.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\PCA.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\DisposableObject.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\ContourApproximationModes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Scripts\DataStabilizer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\calib3d\Enum\FundamentalMatMethod.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\text\TextRecognition.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\Utility.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\MatExprRangeIndexer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_ml.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\xfeatures2d\FREAK.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\video\OpticalFlowFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\face\NativeMethods_face_BasicFaceRecognizer.cs" />
+    <Compile Include="Assets\Scripts\graal\Peristence\DataAPI.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\calib3d\Enum\HomographyMethods.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_xfeatures2d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\Win32API.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVec4f.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfInt32.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\calib3d\Enum\SolvePnPFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Point2f.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_Feature2D.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_stdvector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfDouble.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\ml\SVM.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\flann\IndexParams\SavedIndexParams.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\ml\NativeMethods_ml_Boost.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVectorDouble.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfDMatch.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\InputArray.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\StructurePointer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\flann\IndexParams\KMeansIndexParams.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Veci.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\KMeansFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\GeneralizedHoughGuil.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfString.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfKeyPoint.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\objdetect\SimilarRects.cs" />
+    <Compile Include="Assets\Scripts\Desempenho.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\photo\NativeMethods_photo_HDR.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_imgcodecs.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\CLAHE.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\CvObject.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\flann\IndexParams\KDTreeIndexParams.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Scripts\CameraScaler.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\flann\IndexParams\IndexParams.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\ml\NativeMethods_ml_DTrees.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_superres.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\OutputArrayOfStructList.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_AKAZE.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\LiveSketch_WebCam\LiveSketchScript.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_objdetect.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\MatRowColExprIndexer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\AKAZE.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Tracking\TrackingScript.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\LineSegmentDetector.cs" />
+    <Compile Include="Assets\Scripts\graal\config\SaveSelectedToggle.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\ml\NativeMethods_ml_ANN_MLP.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\MatDiagType.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\text\TextDetection.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVectorDMatch.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\calib3d\Enum\ChessboardFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_imgproc.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\AlgorithmParamType.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Face_Recognizer\FaceRecognizerScene.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Point.cs" />
+    <Compile Include="Assets\Scripts\graal\RequisiçãoHttp\RequisitaHttp.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\flann\IndexParams\AutotunedIndexParams.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\BOWTrainer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Document_Scanner\Scripts\DocumentScannerScript.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\ReduceDimension.cs" />
+    <Compile Include="Assets\Scripts\ChangeResolution.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\ml\NativeMethods_ml_StatModel.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\OutputArrayOfMatList.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\highgui\Window.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\SortFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVec3f.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Grayscale\GrayscaleScript.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Identifiy_Contours_by_Shape\ContoursByShapeScript.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Vecs.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVectorInt.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\OCR.Alphabet\AlphabetOCRScene.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Document_Scanner\Scripts\DocumentScannerLobby.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\MSER.cs" />
+    <Compile Include="Assets\Scripts\graal\Producao\SendProducao.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\flann\IndexParams\SearchParams.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\DctFlags.cs" />
+    <Compile Include="Assets\JSONObject.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\FloodFillFlags.cs" />
+    <Compile Include="Assets\HabilitaGamificacao.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\face\NativeMethods_face_LBPHFaceRecognizer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\OpenCvSharpException.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\calib3d\NativeMethods_calib3d.cs" />
+    <Compile Include="Assets\Scripts\ObjectToSave.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Delegate\CvTrackbarCallback.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfERStat.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Point2d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Vecf.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\ArrayAddress.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfShort.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\MatExpr_CvMethods.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Subdiv2D.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\objdetect\HOGDescriptor.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\GemmFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfPoint3d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\MatProxy.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfFloat.cs" />
+    <Compile Include="Assets\Scripts\SystemControl.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfByte.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Point3d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\flann\Index.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\RNG_MT19937.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\flann\FlannCentersInit.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Size2d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfFloat4.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\Enum\DrawMatchesFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_optflow.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\aruco\Dictionary.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\ml\EM.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVec6f.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\ScopedGCHandle.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\calib3d\Enum\StereoRectificationFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Size2f.cs" />
+    <Compile Include="Assets\Scripts\graal\Producao\Producao.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\ml\NativeMethods_ml_RTrees.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\superres\FrameSourceImpl.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\AdaptiveThresholdTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\CovarFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfDouble.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\calib3d\Enum\FindCirclesGridFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\Enum\AGASTType.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_highgui.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatIndexer.cs" />
+    <Compile Include="Assets\Scripts\graal\Menu\GameDisplay-original.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\FlannBasedMatcher.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Rect2d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\GeneralizedHough.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\ColorConversionCodes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\flann\IndexParams\CompositeIndexParams.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Model\LineSegmentPolar.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\ThresholdTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\ColormapTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgcodecs\Enum\ImwriteFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\calib3d\StereoMatcher.cs" />
+    <Compile Include="Assets\Scripts\Modulos\Modulo2.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\video\DenseOpticalFlow.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\face\CvFace.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Constants.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\TermCriteria.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\core\NativeMethods_core_Classes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\core\NativeMethods_core_Mat.cs" />
+    <Compile Include="Assets\Scripts\KeyCodeExample1.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\photo\NativeMethods_photo.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\CpuFeatures.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\imgproc\NativeMethods_imgproc.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_bgsegm.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\ml\NativeMethods_ml.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Marker_Detector\MarkerDetector.cs" />
+    <Compile Include="Assets\Scripts\KeyCodeExample.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\Platform.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\KAZE.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\shape\ShapeDistanceExtractor.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_imgcodecs.cs" />
+    <Compile Include="Assets\Scripts\graal\Usuario\GetUsuarioByLogin.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\shape\NativeMethods_shape_ShapeDistanceExtractor.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\ICvPtrHolder.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\stitching\Stitcher.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\xfeatures2d\SURF.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\TemplateMatchModes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\StringArrayAddress.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfPoint3f.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\ORB.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Delegate\CvErrorCallback.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\TimeMeasurer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\LineSegmentDetectorModes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\bgsegm\BackgroundSubtractorGMG.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Vecw.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\video\NativeMethods_video_BackgroundSubtractor.cs" />
+    <Compile Include="Assets\Scripts\FimDaEtapa.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Point3f.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Document_Scanner\Scripts\PaperScanner.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Moments.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Rect.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_stitching.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Model\HierarchyIndex.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Delegate\MatForeachFunction.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\DistanceTransformLabelTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\video\NativeMethods_video.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\superres\SuperResolutionImpl.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\highgui\Enum\ButtonTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\core\NativeMethods_core_MatExpr.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\highgui\CvTrackbar.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\DecompTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfPoint2d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\KeyPointsFilter.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_xphoto.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\Enum\AKAZEDescriptorType.cs" />
+    <Compile Include="Assets\Scripts\graal\Menu\GameDisplay.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVectorPoint2f.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\ConnectedComponentsTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVec4i.cs" />
+    <Compile Include="Assets\Scripts\LoadScene.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\calib3d\NativeMethods_calib3d_StereoMatcher.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Lobby\LobbyScript.cs" />
+    <Compile Include="Assets\Scripts\InicioDaEtapa.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\video\BackgroundSubtractorMog2.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\ml\NativeMethods_ml_KNearest.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\IStdVector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfByte3.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\video\KalmanFilter.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\face\FaceRecognizer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Face_Detector\FaceDetectorScene.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\objdetect\HistogramNormType.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_KAZE.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\photo\CalibrateDebevec.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\imgproc\NativeMethods_imgproc_CLAHE.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\SimpleBlobDetector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_text.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\NormTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_BOW.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\ml\ParamGrid.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Size.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\xfeatures2d\SIFT.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVectorERStat.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfPoint3i.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\xfeatures2d\StarDetector.cs" />
+    <Compile Include="Assets\Scripts\Modulos\Modulo3.cs" />
+    <Compile Include="Assets\Scripts\FindDirectory.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\Mat.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\calib3d\StereoSGBM.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\FastFeatureDetector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Unity\Unity.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\DescriptorMatcher.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\Mat_CvMethods.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\photo\CalibrateCRF.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\flann\IndexParams\LinearIndexParams.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\shape\ShapeContextDistanceExtractor.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfDMatch.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfPoint2f.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_AgastFeatureDetector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_video.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\shape\HausdorffDistanceExtractor.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\ConnectedComponent.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\BRISK.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\RNG.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_GFTTDetector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_BRISK.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\Enum\KAZEDiffusivity.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\ml\NativeMethods_ml_SVM.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Vecb.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Rangef.cs" />
+    <Compile Include="Assets\CanvasDesempenho.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\EnumerableEx.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\face\NativeMethods_face_FaceRecognizer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\RetrievalModes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\superres\SuperResolution.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\superres\FrameSource.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVec6d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfFloat6.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\GrabCutModes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\core\NativeMethods_core_SparseMat.cs" />
+    <Compile Include="Assets\Scripts\JsonManager - original.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\aruco\DetectorParameters.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_KeyPointsFilter.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\imgproc\NativeMethods_imgproc_LineSegmentDetector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\HistCompMethods.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_aruco.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_SimpleBlobDetector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\imgproc\NativeMethods_imgproc_GeneralizedHough.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\BorderTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\face\NativeMethods_face.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Scalar.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\core\NativeMethods_core.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfUShort.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\ml\Enum\SampleTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\BOWImgDescriptorExtractor.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\highgui\FourCC.cs" />
+    <Compile Include="Assets\Scripts\Modulos\Modulo.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\GrabCutClasses.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\SparseMat.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_ORB.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfMat.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\FileNode.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Algorithm.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\MorphShapes.cs" />
+    <Compile Include="Assets\Scripts\graal\login\teste.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\DynamicInvoker.cs" />
+    <Compile Include="Assets\Scripts\SaveTest.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_xfeatures2d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Model\CircleSegment.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\calib3d\Enum\CalibrationFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\OCR.Alphabet\AlphabetOCR.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_FastFeatureDetector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\LineTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\ml\StatModel.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Vecd.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\calib3d\StereoBM.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\flann\FlannDistance.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\aruco\Enum\PredefinedDictionaryName.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVectorFloat.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgcodecs\ImageEncodingParam.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\RotateFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\MarkerStyle.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\DLib\PInvoke\NativeMethods_dlib.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\CriteriaType.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_xphoto.cs" />
+    <Compile Include="Assets\Scripts\graal\Usuario\Usuario.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\DenseFeatureDetector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\FileStorage.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\face\LBPHFaceRecognizer.cs" />
+    <Compile Include="Assets\Scripts\JsonManager.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\ml\NativeMethods_ml_NormalBayesClassifier.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfT.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\aruco\CvAruco.cs" />
+    <Compile Include="Assets\Scripts\graal\login\LoginManager_OK.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\InputOutputArray.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_DescriptorExtractor.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_face.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\video\BackgroundSubtractorKNN.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_photo.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\SparseMatIndexer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVec2f.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\ml\KNearest.cs" />
+    <Compile Include="Assets\Scripts\graal\Usuario\SendUsuario.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\imgproc\NativeMethods_imgproc_LineIterator.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\xfeatures2d\BriefDescriptorExtractor.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVectorPoint.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\ErrorCode.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgcodecs\Enum\ConvertImageModes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_face.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\video\BackgroundSubtractor.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Point3i.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\DumpFormat.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_core.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\GeneralizedHoughBallard.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfInt4.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\ml\ANN_MLP.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\tracking\Tracker.cs" />
+    <Compile Include="Assets\JSONTest.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_superres.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\LineIterator.cs" />
+    <Compile Include="Assets\Scripts\graal\login\LoginManager.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\ml\NativeMethods_ml_EM.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\Feature2D.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\photo\EdgePreservingMethods.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfVectorVec2i.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfPoint.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfFloat.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\MatExprRowColIndexer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\ml\NativeMethods_ml_LogisticRegression.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\MatType.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\PInvokeHelper.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\SVD.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\DLib\ShapePredictor.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_tracking.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\Enum\FASTType.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Model\Line2D.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\MatRowColIndexer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\BOWKMeansTrainer.cs" />
+    <Compile Include="Assets\Config.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\ml\NormalBayesClassifier.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\InOutArrayKind.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Scripts\FaceProcessor.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Scripts\DetectedFace.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\DistributionType.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\DftFlags.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfPoint2f.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\ReduceTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\objdetect\LatendSvmDetector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_optflow.cs" />
+    <Compile Include="Assets\JSONArray.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\photo\InpaintMethod.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Demo\Scripts\WebCamera.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Enum\CmpTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\ml\TrainData.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\OutputArray.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\AgastFeatureDetector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\core\NativeMethods_core_Algorithm.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Rectf.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\face\BasicFaceRecognizer.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\HoughMethods.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\highgui\Enum\MouseEvent.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Model\LineSegmentPoint.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\RotatedRect.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\DisposableCvObject.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfByte.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Cv2\Cv2_features2d.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\DistanceMaskSize.cs" />
+    <Compile Include="Assets\CanvasRP.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfInt.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfPoint3f.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_highgui.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\IVec.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\DistanceTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\MatOfDouble3.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfPoint.cs" />
+    <Compile Include="Assets\Scripts\Id_Identifier.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\PixelConnectivity.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Ptr.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\video\DenseOpticalFlowImpl.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\imgproc\NativeMethods_imgproc_Subdiv2D.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\highgui\Enum\WindowMode.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgcodecs\Enum\ImreadModes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\ProjectionType.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\WindowsLibraryLoader.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\BFMatcher.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\Range.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Vector\VectorOfRect.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\KeyPoint.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\GFTTDetector.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\MorphTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\PlatformUtil.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_DescriptorMatcher.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\NativeMethods_flann.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\imgproc\Enum\FlipMode.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\tracking\Enum\TrackerTypes.cs" />
+    <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\DMatch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\OpenCV+Unity\Plugins\Windows\x86\OpenCvSharpExtern.dll" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\OpenCV+Unity\Demo\Face_Detector\haarcascade_eye.xml" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\OpenCV+Unity\Documentation\Third-Party Licenses.txt" />
+    <None Include="Assets\Trainer\caderno2.xml" />
+    <None Include="Assets\Trainer\Placa1 Completa Baixo.xml" />
+    <None Include="Assets\OpenCV+Unity\smcs.rsp" />
+    <None Include="Assets\readme.txt" />
+    <None Include="Assets\OpenCV+Unity\gmcs.rsp" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Trainer\caderno.xml" />
+    <None Include="Assets\Trainer\caderno4.xml" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\OpenCV+Unity\Documentation\OpenCV+Unity_Notes.txt" />
+    <None Include="Assets\_extMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\OpenCV+Unity\Demo\Face_Detector\haarcascade_eye_tree_eyeglasses.xml" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\OpenCV+Unity\Plugins\Windows\x86_64\OpenCvSharpExtern.dll" />
+    <None Include="Assets\_extMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Trainer\Cascade1.xml" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\OpenCV+Unity\Demo\Face_Recognizer\face-recognizer.xml" />
+    <None Include="Assets\_extMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\OpenCV+Unity\Demo\Face_Detector\haarcascade_frontalface_default.xml" />
+    <None Include="Assets\Trainer\C.xml" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\_extMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Trainer\Outro.xml" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\OpenCV+Unity\mcs.rsp" />
+    <None Include="Assets\_extMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DeviceSimulatorModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DiagnosticsModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.QuickSearchModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreFontEngineModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreTextEngineModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIBuilderModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>Library\PackageCache\com.ptc.vuforia.engine@716a8216fe\Vuforia\Plugins\Managed\Runtime\Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Configuration.Install.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services.Client">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices.Protocols">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.DirectoryServices.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Drawing.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Selectors">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IdentityModel.Selectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json.Microsoft">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Json.Microsoft.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Debugger">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Debugger.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Experimental">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Experimental.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Observable.Aliases">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Observable.Aliases.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Providers">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Runtime.Remoting">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Runtime.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Windows.Forms">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Windows.Threading">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Windows.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Context">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reflection.Context.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.DurableInstancing">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.DurableInstancing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Serialization.Formatters.Soap.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Activation">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Activation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Discovery">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Discovery.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Routing">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceProcess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.ApplicationServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.DynamicData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Extensions.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.SelfHost">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Http.SelfHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mobile">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.RegularExpressions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Windows.Forms.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.Activities">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Workflow.Activities.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.ComponentModel">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Workflow.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.Runtime">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Workflow.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.DispatchProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\araiz\Unity\2021.2.13f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="VuforiaEditorScripts">
+      <HintPath>Library\ScriptAssemblies\VuforiaEditorScripts.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="VuforiaScripts">
+      <HintPath>Library\ScriptAssemblies\VuforiaScripts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SimpleFileBrowser.Runtime.csproj">
+      <Project>{04E61D0C-23B2-EDF4-8322-F9DFF6305281}</Project>
+      <Name>SimpleFileBrowser.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="EditorMigrationScripts.csproj">
+      <Project>{46941038-E514-BF10-30F8-B17297A55C15}</Project>
+      <Name>EditorMigrationScripts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
