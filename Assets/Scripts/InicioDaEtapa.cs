@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InicioDaEtapa : MonoBehaviour
+        
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,18 @@ public class InicioDaEtapa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
+    }
+
+    public bool GetState()
+    {
+        if (gameObject.activeSelf)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

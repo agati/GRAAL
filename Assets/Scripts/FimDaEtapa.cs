@@ -25,5 +25,15 @@ public class FimDaEtapa : MonoBehaviour
             Application.Quit();
         }
     }
-
+    public bool GetState()
+    {
+        if (gameObject.activeSelf)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

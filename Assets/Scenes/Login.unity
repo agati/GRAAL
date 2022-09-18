@@ -2131,6 +2131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a479010adb137e24fa5fb68b720026fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  molduraMontagemCorreta: {fileID: 696867825}
+  molduraMontagemErrada: {fileID: 1303165315}
 --- !u!114 &1327756118
 MonoBehaviour:
   m_ObjectHideFlags: 0

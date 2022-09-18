@@ -24,6 +24,9 @@ public class GameDisplay : MonoBehaviour
     public GameObject montagemCorreta;
     public GameObject montagemErrada;
 
+    //public GameObject start;
+    //public GameObject end;
+
     public TMPro.TMP_Text displayTextoUsuarioG;
     public TMPro.TMP_Text displayTextoPostoPasso;
     public TMPro.TMP_Text displayTextoMenorTempo;
@@ -36,6 +39,9 @@ public class GameDisplay : MonoBehaviour
 
     public Usuario usuario;
     public Producao producao;
+
+    public GameObject inicio;
+    public GameObject fim;
 
     public SystemControl systemControl;
     public FimDaEtapa fimDaEtapa;
@@ -50,6 +56,7 @@ public class GameDisplay : MonoBehaviour
     public CanvasRP canvasRP;
 
     public float tempo;
+    public int numeroMontagem;
 
     //mostra grafico regularidade no rodapé
     public RawImage passo1;
@@ -64,6 +71,8 @@ public class GameDisplay : MonoBehaviour
 
         usuario = FindObjectOfType<Usuario>();
         producao= FindObjectOfType<Producao>();
+
+         
         /*
         //inicia com gamificação desligada
         gamificacao = false;
@@ -80,7 +89,7 @@ public class GameDisplay : MonoBehaviour
 
 
         intervaloEntrePlacas = 3;
-
+        numeroMontagem = -1;
 
         displayTextoUsuarioG.text = "Usuário: " + usuario.login + " G: " + gamificacao.ToString();
         // Debug.Log("DisplayLogin():login vale: " + displayTextoUsuarioG.text);
@@ -96,67 +105,10 @@ public class GameDisplay : MonoBehaviour
         inicioDaEtapa = FindObjectOfType<InicioDaEtapa>();
         fimDaEtapa = FindObjectOfType<FimDaEtapa>();
 
-        ConfereTeclas();
-        MostraRodape();
-        ConfereMontagem();
-       
-
-
-
-
-        // mostra informações de desempenho após n placas ***********************
-
-        if (systemControl.assemblyId % intervaloEntrePlacas == 0 && fimDaEtapa.isActiveAndEnabled && gamificacao == true)
-        {
-            //múltiplo de intervaloEntrePlacas e porque precisa terminar todos os passos antes de mostrar resultados.
-            Debug.Log("Hora de mostrar o desempemho depois de " + systemControl.assemblyId.ToString() + " placas montadas");
-
-            //Liga a tela de desempenho
-            canvasDesempenho.Ativar();
-
-            //Linha de texto no cabeçalho da página de desempenho
-            headerDesempenho.text = "Seu desempenho após " + systemControl.assemblyId.ToString() + " montagens";
-
-
-            //Linha de texto no cabeçalho da Tabela de desempenho
-            headerTemposErros.text = "Posto: " +SceneManager.GetActiveScene().name.Substring(SceneManager.GetActiveScene().name.Length - 2) ;
-
-
-            //menor tempo  de montagem, como sendo a soma de todos os passos daquela montagem.
-            tempo = desempenho.GetMenorTempo();
-            Debug.Log("GameDisplay-Tempo do primeiro item do Dicionário Sorted vale: " + tempo.ToString());
-            displayTextoMenorTempo.text = "Meu menor tempo no Posto " +SceneManager.GetActiveScene().name.Substring(SceneManager.GetActiveScene().name.Length - 2)+":  " + tempo.ToString()+" s.";
-
-
-            //maior tempo de montagem
-            tempo = desempenho.GetMaiorTempo();
-            displayTextoMaiorTempo.text = "Meu maior tempo no Posto " + SceneManager.GetActiveScene().name.Substring(SceneManager.GetActiveScene().name.Length - 2) + ":  " + tempo.ToString() + " s.";
-
-        
-            //sugestão Marcelo:
-            ritmoMontagem.text = "Minha regularidade no Posto " 
-                +SceneManager.GetActiveScene().name.Substring(SceneManager.GetActiveScene().name.Length - 2) + ":  "
-                + desempenho.GetRitmo().ToString()
-                + " %.";
-
-
-            //TODO: esta linha de texto abaixo é para quando o módulo RP estiver funcionando
-            // displayTextoConsecutivas.text = "Montagens sem erro: " + "nd.";
-
-            //sugestão Marcelo:
-            displayTextoConsecutivas.text = "Minha taxa de acertos no Posto "
-                + SceneManager.GetActiveScene().name.Substring(SceneManager.GetActiveScene().name.Length - 2)
-                + ": " + "xx" + " %.";
-
-            ConfereRitmo();
-            
-
-        }
-
-        else
-        {
-            canvasDesempenho.Desativar();
-        }
+       ConfereTeclas();
+       MostraRodape();
+       ConfereMontagem();
+        MostraDesempenho();
 
 
     }// fim do update
@@ -213,7 +165,7 @@ public class GameDisplay : MonoBehaviour
         }
 
         /*
-         *TODO:
+        // ********************************** TODO: ****************************************
         //teste para criar a regularidade mais granular, a nível de passos
         
         if(systemControl.steptimes[1] <14.0f && systemControl.steptimes[1] >= 10.0f)
@@ -224,8 +176,9 @@ public class GameDisplay : MonoBehaviour
         {
             passo1.color = Color.gray;
         }
+        //*******************************************************************************
         */
-    }
+    }//fim do MostraRodape()
 
 
     public void ConfereRitmo()
@@ -247,22 +200,108 @@ public class GameDisplay : MonoBehaviour
             }
 
         }
-    }
+    }//fim do ConfereRitmo()
+
+   
+   public void  MostraDesempenho()
+    {
+        // mostra informações de desempenho após n placas ***********************
+
+        if (systemControl.assemblyId % intervaloEntrePlacas == 0 && fimDaEtapa.isActiveAndEnabled && gamificacao == true)
+        {
+            //múltiplo de intervaloEntrePlacas e porque precisa terminar todos os passos antes de mostrar resultados.
+            Debug.Log("Hora de mostrar o desempemho depois de " + systemControl.assemblyId.ToString() + " placas montadas");
+
+            //Liga a tela de desempenho
+            canvasDesempenho.Ativar();
+
+            //Linha de texto no cabeçalho da página de desempenho
+            headerDesempenho.text = "Seu desempenho após " + systemControl.assemblyId.ToString() + " montagens";
+
+
+            //Linha de texto no cabeçalho da Tabela de desempenho
+            headerTemposErros.text = "Posto: " + SceneManager.GetActiveScene().name.Substring(SceneManager.GetActiveScene().name.Length - 2);
+
+
+            //menor tempo  de montagem, como sendo a soma de todos os passos daquela montagem.
+            tempo = desempenho.GetMenorTempo();
+            Debug.Log("GameDisplay-Tempo do primeiro item do Dicionário Sorted vale: " + tempo.ToString());
+            displayTextoMenorTempo.text = "Meu menor tempo no Posto " + SceneManager.GetActiveScene().name.Substring(SceneManager.GetActiveScene().name.Length - 2) + ":  " + tempo.ToString() + " s.";
+
+
+            //maior tempo de montagem
+            tempo = desempenho.GetMaiorTempo();
+            displayTextoMaiorTempo.text = "Meu maior tempo no Posto " + SceneManager.GetActiveScene().name.Substring(SceneManager.GetActiveScene().name.Length - 2) + ":  " + tempo.ToString() + " s.";
+
+
+            //sugestão Marcelo:
+            ritmoMontagem.text = "Minha regularidade no Posto "
+                + SceneManager.GetActiveScene().name.Substring(SceneManager.GetActiveScene().name.Length - 2) + ":  "
+                + desempenho.GetRitmo().ToString()
+                + " %.";
+
+
+            //TODO: esta linha de texto abaixo é para quando o módulo RP estiver funcionando
+            // displayTextoConsecutivas.text = "Montagens sem erro: " + "nd.";
+
+            //sugestão Marcelo:
+            displayTextoConsecutivas.text = "Minha taxa de acertos no Posto "
+                + SceneManager.GetActiveScene().name.Substring(SceneManager.GetActiveScene().name.Length - 2)
+                + ": " + desempenho.GetTaxaAcertos().ToString() + " %.";
+
+            ConfereRitmo();
+            
+            
+
+        }
+
+        else
+        {
+            canvasDesempenho.Desativar();
+        }
+
+    }//fim do MostraDesempenho()
 
     public void ConfereMontagem()
     {
-        if(fimDaEtapa.isActiveAndEnabled && gamificacao == true)
+
+        if (systemControl.step == systemControl.steps.Length - 2 && gamificacao == true && numeroMontagem!=systemControl.assemblyId)
         {
+            //Debug.Log("ConfereMontagem(): Achou o fim da Etapa");
             canvasRP.Ativar();
+
+            //sorteia se a placa foi montada corretamente ou não. "produção.correta" deverá ser informada pelo resultado do módulo de RP
+            float randomico = UnityEngine.Random.Range(0.0f, 1.0f);
+
+            if (randomico <= 0.3f)
+            {
+                producao.correta = "0";
+                desempenho.numeroMontagensIncorretas++; 
+                producao.tempoRetrabalho = (randomico * 5).ToString();
+                canvasRP.SinalizaMontagemErrada();
+
+            }
+            else
+            {
+                producao.correta = "1";
+                producao.tempoRetrabalho = "0";
+                desempenho.numeroMontagensCorretas++;
+                canvasRP.SinalizaMontagemCorreta();
+            }
+            numeroMontagem = systemControl.assemblyId;
+
         }
-        if (ifimDaEtapa.isActiveAndEnabled==false)// && gamificacao == true)
-        {
-            canvasRP.Desativar();
-        }
+       // Debug.Log("ConfereMontagem():step vale: " + systemControl.step.ToString()+" e steps.Length vale: "+ systemControl.steps.Length.ToString() );
+
+        if (systemControl.step==systemControl.steps.Length-1 && gamificacao == true)
+            {
+         //       Debug.Log("ConfereMontagem(): Achou o início da Etapa");
+                canvasRP.Desativar();
+            }
+        
+       
+
+    }//fim do ConfereMontagem()
 
 
-    }
-
-          
-   
 }

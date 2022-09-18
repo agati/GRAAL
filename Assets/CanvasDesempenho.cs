@@ -14,12 +14,6 @@ public class CanvasDesempenho : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Desativar()
     {
         gameObject.SetActive(false);

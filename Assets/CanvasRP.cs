@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CanvasRP : MonoBehaviour
 {
+    public GameObject molduraMontagemCorreta;
+    public GameObject molduraMontagemErrada;
+
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -20,4 +23,17 @@ public class CanvasRP : MonoBehaviour
 
 
     }
+
+    public void SinalizaMontagemCorreta()
+    {
+        molduraMontagemErrada.SetActive(false);
+        molduraMontagemCorreta.SetActive(true);
+    }
+
+    public void SinalizaMontagemErrada()
+    {
+        molduraMontagemErrada.SetActive(true);
+        molduraMontagemCorreta.SetActive(false);
+    }
 }
+

@@ -34,6 +34,9 @@ public class Desempenho : MonoBehaviour
     public int numeroPassosMontagem;
     public int intervaloEntrePlacas;
     public int montagemControle;
+    public int numeroMontagensIncorretas;//no momento, esse valor está sendo simulado no Gamidisplay() e salvo nesta variável.Deve vir do módulo RP no futuro.
+    public int numeroMontagensCorretas;//no momento, esse valor está sendo simulado no Gamidisplay() e salvo nesta variável.Deve vir do módulo RP no futuro.
+
 
     public SortedDictionary<float, int> temposEtapas; //por default, não aparecem no inspector!!! 
     
@@ -115,7 +118,15 @@ public class Desempenho : MonoBehaviour
         
     }
 
+    public float GetTaxaErros()
+    {
+        return 100 * numeroMontagensIncorretas / systemControl.assemblyId;
+    }
 
+    public float GetTaxaAcertos()
+    {
+        return 100 * numeroMontagensCorretas / systemControl.assemblyId;
+    }
 
     public  void IncrementaListaTemposEtapas()
     {

@@ -182,20 +182,8 @@ public class SystemControl : MonoBehaviour
         producao.etapa = SceneManager.GetActiveScene().name;
         producao.tempoTarefa = assemblyTime.ToString();
 
-        float randomico = UnityEngine.Random.Range(0.0f, 1.0f);
-        
-        if (randomico <= 0.3f)
-        {
-            producao.correta = "0";
-            producao.tempoRetrabalho = (randomico * 5).ToString();
-
-        }
-        else
-        {
-            producao.correta = "1";
-            producao.tempoRetrabalho = "0";
-        }
-
+        // o random de RP ficou no gamedisplay.cs, no momento de gerar as molduras de montagem correta ou montagem errada
+    
         usuario= FindObjectOfType<Usuario>();
         Debug.Log("Id do usuário vale: " + usuario.id);
         producao.usuarioId = usuario.id;
